@@ -1,0 +1,50 @@
+.wall_wrapper{
+  height: 1100px;
+  width: 970px;
+  font-family: Impact, Charcoal, sans-serif;
+  background-image: url(https://2.bp.blogspot.com/-IxyNEZauanQ/UC-1foWxRGI/AAAAAAAAHIc/moGF4qU9O_M/s0/mgs-snake-1920x1080-wallpaper.jpg);
+
+}
+.header{
+  border-bottom: 2px solid black;
+
+}
+.header h1{
+  display: inline-block;
+  margin-left: 20px;
+}
+.header h4{
+  display: inline-block;
+  margin-left: 400px;
+}
+.header a{
+  margin-left: 10px;
+}
+.post-box p{
+  margin-left: 40px;
+}
+.post-box textarea{
+  margin-left: 40px;
+  font-family: Impact, Charcoal, sans-serif;
+  color: rgba(176, 0, 0, .89);
+}
+.post-box button{
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 16px;
+  height: 35px;
+  width: 150px;
+  background-color: rgba(176, 0, 0, .89);
+  margin-left: 477px;
+  margin-top: 10px;
+}
+#post_id{
+  color: rgba(176, 0, 0, .89);
+  margin-left: 40px;
+  font-size: 18px;
+  margin-bottom: 0px;
+
+}
+#post_content{
+  padding: 0px 55px 0px 55px;
+  margin-top: 10px;
+}

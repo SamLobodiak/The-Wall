@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='wall.css') }}">
+    <title>The Wall</title>
+  </head>
+  <body>
+    <div class="wall_wrapper">
+      <div class="header">
+        <h1>CodingDojo Wall</h1>
+        <h4>Welcome {{session['first_name_input']}}</h4>
+        <a href="/">Log-off</a>
+      </div>
+      <div class="post-box">
+        <form class="post_form" action="index.html" method="post">
+          <p>Post a message</p>
+          <textarea name="message_box" rows="4" cols="57"></textarea>
+          <br>
+          <button type="button" name="button">Post a message</button>
+        </form>
+      </div>
+      <div class="messages">
+        <p id="post_id">User Name - 'created_at'</p>
+        <p id="post_content">A aliquam augue suspendisse vitae diam facilisis sodales faucibus, neque dictum tempus mollis cubilia vivamus cras euismod, eleifend rutrum quam felis integer vestibulum metus. Platea senectus justo convallis sed potenti habitasse ligula et inceptos metus facilisis, dignissim consequat est praesent nibh nam magna eget ad orci. Vestibulum dis posuere venenatis sem cras vitae leo dapibus lobortis blandit nibh, pharetra nunc placerat accumsan semper magnis maecenas risus tristique.</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>

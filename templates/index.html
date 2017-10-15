@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>The Wall Login Page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="the">The</h1>
+      <h1 class="wall">Wall</h1>
+      <h3>Register</h3>
+      <form class="register_form" action="/register" method="post">
+        <label for="First Name">First Name: </label>
+        <input type="text" name="first_name" value="">
+        <br>
+        <label for="Last Name">Last Name: </label>
+        <input type="text" name="last_name" value="">
+        <br>
+        <label for="email">Email: </label>
+        <input type="text" name="email" value="">
+        <br>
+        <label for="Password">Password: </label>
+        <input type="text" name="password" value="">
+        <br>
+        <label for="Confirm Password">Confirm Password: </label>
+        <input type="text" name="confirm_password" value="">
+        <button id="register" type="submit" name="submit" value='REGISTER'>REGISTER</button>
+      </form>
+      <br>
+      <h3>Already Registered? Login here.</h3>
+
+      <form class="login_form" action="/login" method="post">
+        <p>User E-Mail: <input type="text" name="login_email" value=""></p>
+        <p>User Password: <input type="text" name="login_password" value=""></p>
+        <button id="login" type="submit" name="log_in">LOG IN</button>
+      </form>
+      <div class="flash-message">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+                <p>{{message}}<img src="https://vignette.wikia.nocookie.net/metalgear/images/1/1a/SolidSnake.png/revision/latest/scale-to-width-down/148?cb=20100522112721" alt=""></p>
+            {% endfor %}
+            {% endif %}
+        {% endwith %}
+      </div>
+
+    </div>
+
+  </body>
+</html>
